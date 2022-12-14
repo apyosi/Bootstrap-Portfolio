@@ -1,4 +1,4 @@
-# Portfolio Template - Lernantino
+# Bootstrap Portfolio Template
 
 ## Description 
 Task to create portfolio template page using the Bootstrap CSS Framework.
