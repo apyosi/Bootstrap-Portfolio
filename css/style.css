@@ -1,7 +1,12 @@
-/* 
-.card-img-overlay {
-  background-color: aquamarine !important;
-} */
+body {
+  margin-top: 56px;
+}
+
+
+.scroll {
+  scroll-margin-top: 56px;
+  text-align: center;
+}
 
 .background-image {
   position: relative;
@@ -12,8 +17,25 @@
   height: 500px ;
 }
 
-.hero-banner h2 {
+#hero {
+  padding: 0;
+  margin: 0;
+}
+
+.hero{
   position: absolute;
   bottom: 1%;
   right: 5%;
+  background-color: white;
+}
+
+.card img:hover {
+  cursor: pointer;
+}
+
+
+a:hover {
+  -webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.6);
+  background-color: var(--NAV--LINK-HOVER);
 }

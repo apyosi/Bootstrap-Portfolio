@@ -23,103 +23,95 @@
     ></script>
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="container-fluid">
-      <!-- Offcanvas dark navbar -->
-      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <!-- Offcanvas dark navbar -->
+    <header>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Anton Yosifov</a>
           <button
             class="navbar-toggler"
             type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasDarkNavbar"
-            aria-controls="offcanvasDarkNavbar"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div
-            class="offcanvas offcanvas-end text-bg-dark"
-            tabindex="-1"
-            id="offcanvasDarkNavbar"
-            aria-labelledby="offcanvasDarkNavbarLabel"
-          >
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">
-                Menu
-              </h5>
-              <button
-                type="button"
-                class="btn-close btn-close-white"
-                data-bs-dismiss="offcanvas"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link" href="#about">About Me</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#work">Work</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact Me</a>
-                </li>
-              </ul>
-            </div>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#work">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Me</a>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
 
       <!--Hero Section  -->
-      <section class="hero-banner">
-        <div class="background-image">
-          <!-- <img src="./images/02-hero-bg.jpg" class="img-fluid" alt="..."> -->
-          <h2 class="text-bg-light p-3">Cool subtitle here!</h2>
+
+      <section id="hero" class="container-fluid background-image">
+        <h2 class="hero p-2">Cool subtitle here!</h2>
+      </section>
+    </header>
+
+    <!--About Me Section  -->
+    <main>
+      <section id="about" class="scroll">
+        <hr />
+        <h2>About Me</h2>
+      </section>
+      <section>
+        <div class="container clearfix">
+          <img
+            class="col-4 col-sm-3 col-md-2 float-start mb-3 me-3"
+            src="images/profile-img.png"
+            alt="profile image"
+          />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
+            temporibus repudiandae unde tempora! Fugit, dicta cumque dignissimos
+            veniam porro at obcaecati totam harum reiciendis excepturi minus
+            enim aliquam iste fugiat.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
+            temporibus repudiandae unde tempora! Fugit, dicta cumque dignissimos
+            veniam porro at obcaecati totam harum reiciendis excepturi minus
+            enim aliquam iste fugiat.
+          </p>
+          <br />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
+            temporibus repudiandae unde tempora! Fugit, dicta cumque dignissimos
+            veniam porro at obcaecati totam harum reiciendis excepturi minus
+            enim aliquam iste fugiat.
+          </p>
         </div>
       </section>
 
-      <!--About Me Section  -->
-      <section class="page-section" id="about">
-        <h2>About Me</h2>
-        <hr>
-      </section>
-      <section>
-        <div class=" container clearfix">
-        <img class="col-sm-2 float-sm-start mb-3 me-sm-3" src="images/profile-img.png" alt="profile image" />
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
-          temporibus repudiandae unde tempora! Fugit, dicta cumque dignissimos
-          veniam porro at obcaecati totam harum reiciendis excepturi minus enim
-          aliquam iste fugiat.
-        </p>
-        <br />
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
-          temporibus repudiandae unde tempora! Fugit, dicta cumque dignissimos
-          veniam porro at obcaecati totam harum reiciendis excepturi minus enim
-          aliquam iste fugiat.
-        </p>
-        <br />
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque
-          temporibus repudiandae unde tempora! Fugit, dicta cumque dignissimos
-          veniam porro at obcaecati totam harum reiciendis excepturi minus enim
-          aliquam iste fugiat.
-        </p>
-      </div>
-      </section>
-
       <!-- Cards  Section-->
-      <section id="work">
+
+      <section id="work" class="scroll">
+        <hr />
         <h2>Work</h2>
-        <hr>
         <div class="container">
           <div class="row g-5">
             <div class="card col-md-4 col-sm-6 border-0">
@@ -211,63 +203,112 @@
       </section>
 
       <!-- Skills section  -->
-      <section id="skills">
-        <h2 >Skills</h2>
-        <hr>
-       
-        <div class="d-flex">
-          <ul>
-            <li><i class="fa-brands fa-html5" aria-hidden="true"></i>
-              <p>HTML</p></li>
-            <li><i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
-              <p>CSS</p></li>
-            <li><i class="fa-brands fa-bootstrap " aria-hidden="true"></i>
-              <p>Bootstrap</p></li>
-            <li><i class="fa-brands fa-js" aria-hidden="true"></i>
-              <p>Javascript</p></li>
-            <li><i class="fa-brands fa-node-js" aria-hidden="true"></i>
-              <p>Node.js</p></li>
-            <li><i class="fa-brands fa-react" aria-hidden="true"></i>
-              <p>React</p></li>
-            <li><i class="fa-brands fa-square-git" aria-hidden="true"></i>
-              <p>Git</p></li>
-          </ul>
+
+      <section id="skills" class="scroll">
+        <hr />
+        <h2>Skills</h2>
+
+        <div class="container text-center">
+          <div class="list-unstyled row justify-content-evenly">
+            <div class="col-4">
+              <i
+                class="fa-brands fa-html5 fa-7x text-danger"
+                aria-hidden="true"
+              ></i>
+              <p>HTML</p>
+            </div>
+            <div class="col-4">
+              <i
+                class="fa-brands fa-css3-alt fa-7x text-primary"
+                aria-hidden="true"
+              ></i>
+              <p>CSS</p>
+            </div>
+            <div class="col-4">
+              <i
+                class="fa-brands fa-bootstrap fa-7x text-info"
+                aria-hidden="true"
+              ></i>
+              <p>Bootstrap</p>
+            </div>
+            <div class="col-4">
+              <i
+                class="fa-brands fa-js fa-7x text-warning"
+                aria-hidden="true"
+              ></i>
+              <p>Javascript</p>
+            </div>
+            <div class="col-4">
+              <i
+                class="fa-brands fa-node fa-7x text-success"
+                aria-hidden="true"
+              ></i>
+              <p>Node.js</p>
+            </div>
+            <div class="col-4">
+              <i
+                class="fa-brands fa-react fa-7x text-info"
+                aria-hidden="true"
+              ></i>
+              <p>React</p>
+            </div>
+            <div class="col-4">
+              <i class="fa-brands fa-square-git fa-7x" aria-hidden="true"></i>
+              <p>Git</p>
+            </div>
+            <div class="col-4">
+              <i class="fa-brands fa-github fa-7x" aria-hidden="true"></i>
+              <p>GitHub</p>
+            </div>
+            <div class="col-4">
+              <i class="fa-brands fa-gitlab fa-7x" aria-hidden="true"></i>
+              <p>GitLab</p>
+            </div>
+          </div>
         </div>
       </section>
-      <!-- Contact Section -->
+    </main>
 
-      <section class="page-section" id="contact">
+    <!-- Contact Section -->
+    <footer>
+      <section id="contact" class="scroll">
+        <hr />
         <h2>Contact Me</h2>
-        <hr>
       </section>
-      <section>
-        <ul class="bottomNav">
-          <li><a href="tel:+5555555555">555.555.5555</a></li>
-          <li>
-            <a href="mailto:lernantino@website.com">lernantino@website.com</a>
-          </li>
-          <li>
-            <a
-              href="https://github.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >GitHub</a
-            >
-          </li>
-          <li>
-            <a
-              href="https://twitter.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Twitter</a
-            >
-          </li>
-          <li>
-            <a href="#" rel="noopener noreferrer">Spotify</a>
-          </li>
-        </ul>
-      </section>
-    </div>
+      <div
+        class="container p-3 gap-2 d-grid d-md-flex flex-row flex-wrap justify-content-around"
+      >
+        <a href="tel:+5555555555" class="btn btn-light"
+          ><i class="fa fa-phone-square" aria-hidden="true"></i> 555.555.5555</a
+        >
+        <a href="mailto:lernantino@website.com" class="btn btn-light"
+          ><i class="fa fa-envelope-square" aria-hidden="true"></i>
+          lernantino@website.com</a
+        >
+        <a
+          href="https://github.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-light"
+        >
+          <i class="fa fa-github-square" aria-hidden="true"></i> GitHub</a
+        >
+        <a
+          href="https://twitter.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-light"
+          ><i class="fa fa-twitter-square" aria-hidden="true"></i> Twitter</a
+        >
+        <a
+          href="https://linkedin.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-light"
+          ><i class="fa fa-linkedin-square" aria-hidden="true"></i> LinkedIn</a
+        >
+      </div>
+    </footer>
     <!-- container end -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
